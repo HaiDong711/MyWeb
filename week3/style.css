@@ -1,0 +1,138 @@
+:root{
+    --primary--color:#7fffd4;
+    --secondary--color:#f0f8ff;
+    --primary--text:#a52a2a;
+    --round: 40px;
+    --padding: 30px;
+}
+body{
+   font-size: rem;
+   font-family: "Montserrat", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 400;
+   font-style: normal;
+   font-variation-settings: "wdth" 100;
+}
+
+#personal-holder{
+    background-color:#f0f8ff ;
+    color:#7fffd4;
+    padding:30px;
+    width: 30%;
+    
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+
+}
+/*sx*/
+.text-hasanimation{
+    animation-name: text-animation;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+@keyframes text-animation {
+    from {
+        margin-left: 100%;
+        width: 300%;
+      }
+    
+      75% {
+        font-size: 300%;
+        margin-left: 25%;
+        width: 150%;
+      }
+    
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+}
+@keyframes slide-right {
+    from {
+      margin-left: 0px;
+    }
+    50% {
+      margin-left: 100px;
+    }
+    to {
+      margin-left: 200px;
+    }
+}
+
+@keyframes but-animation {
+	0% {
+		transform: scale3d(1, 1, 1);
+	}
+
+	30% {
+		transform: scale3d(1.25, 0.75, 1);
+	}
+
+	40% {
+		transform: scale3d(0.75, 1.25, 1);
+	}
+
+	50% {
+		transform: scale3d(1.15, 0.85, 1);
+	}
+
+	65% {
+		transform: scale3d(0.95, 1.05, 1);
+	}
+
+	75% {
+		transform: scale3d(1.05, 0.95, 1);
+	}
+
+	100% {
+		transform: scale3d(1, 1, 1);
+	}
+}
+#personal-holder img{
+    border-radius: 50%;
+    animation-name:  slide-right;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#header-holder{
+    background-color:black ;
+    color:#f0f8ff;
+    padding: 10%;
+    padding-left:20px;
+    border-radius: 30 0 0 30;
+}
+
+#header-holder h1{
+    letter-spacing: normal;
+}
+#content{
+    background-color:aqua ;
+    color:#a52a2a;
+    padding-right:20px;
+}
+.content .title{
+    text-transform: capitalize;
+}
+
+.content p{
+    text-align: justify;
+}
+button{
+    width: 100px;
+    padding: 20px 30px;
+    font-size: 0.9ex;
+    font-weight: bold;
+}
+
+#personal-holder button{
+    background-color: crimson;
+    color: inherit;
+    border-color: indigo;
+    border-radius: 5px;
+    border-style: solid;
+}
+
+
+
